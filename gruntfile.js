@@ -13,14 +13,15 @@ module.exports = function(grunt){
             },
             //说明文件合并的src原始文件，dest目的文件
             dist:{
-                src:['public/js/control.js',
-                'public/js/diamond.js',
-                'public/js/dot.js',
-                'public/js/second.js',
-                'public/js/minute.js',
-                'public/js/hour.js',
-                'public/js/clock.js'],
-                dest:'public/js/myClock.js',
+                src:[
+                'public/js/a.js',
+                'public/js/b.js'],
+                dest:'public/js/ab.js',
+                src:[
+                'public/css/a.css',
+                'public/css/b.css' 
+                ],
+                dest:'public/css/ab.css', 
             },
         },
 
@@ -31,7 +32,8 @@ module.exports = function(grunt){
                //文件说明
                 files:{
                     //压缩之后的文件 : [等待压缩的文件1,等待压缩文件2,....]
-                    'public/js/myClock.min.js':['public/js/myClock.js'],
+                    'public/js/ab.min.js':['public/js/ab.js'],
+                    'public/css/ab.min.css':['public/css/ab.css']
                 },
            },
        },
