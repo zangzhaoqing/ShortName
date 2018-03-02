@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+    	main{
+    		width:100px;
+    		height:100px;
+    		background: red;
+    		border:1px solid #333;
+    		box-sizing: border-box;
+    		padding:5px;
+            outline:rgb(0, 89, 255) solid thick;
+    	}
+    </style> 
+</head>
+<body>
+    <main>
+    	
+    </main>
+    <div>
+
+    </div>
+</body>
+</html>
+<script>
+console.time("获取数据");
+var a=document.getElementsByTagName('main');
+var div=document.getElementsByTagName('div');
+function myFunction(){
+    for(var i=0;i<=100;i++){
+        console.log(i);        
+    }
+        console.log(i);    
+}
+myFunction();
+console.timeEnd('获取数据');
+</script>
