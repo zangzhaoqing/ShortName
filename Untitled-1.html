@@ -1,47 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
-    <title>Document</title>
-    <style>
-    	main{
-    		width:100px;
-    		height:100px;
-    		background: red;
-    		border:1px solid #333;
-    		box-sizing: border-box;
-    		padding:5px;
-            outline:rgb(0, 89, 255) solid thick;
-            /* all: inherit; */
-    	}
-    </style> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>
+    @import url("a.css");
+</style>
 <body>
-   <div>
-    <main>
-    	
-    </main>
-    
 
-    </div>
+<ul class="sidenav">
+  <li><a class="active" href="#home">主页</a></li>
+  <li><a href="#news">新闻</a></li>
+  <li><a href="#contact">联系</a></li>
+  <li><a href="#about">关于</a></li>
+</ul>
+
+<div class="content">
+  <h2>响应式边栏导航实例</h2>
+  <p>该实例在屏幕宽度小于 900px 时导航栏为顶部水平导航栏，如果大于 900px 导航栏会在左边，且是固定的。</p>
+  <p>如果屏幕宽度小于 400px 会变为垂直导航栏。</p>
+  <h3>重置浏览器窗口大小，查看效果。</h3>
+</div>
+
 </body>
 </html>
-<script>
-console.time("获取数据");
-var a=document.getElementsByTagName('main');
-var div=document.getElementsByTagName('div');
-function myFunction(){
-    for(var i=0;i<=100;i++){
-        console.log(i);        
-    }
-        console.log(i);    
-}
-myFunction();
-for(var i=0;i<102;i++){
-    console.log(i);
-}
-console.timeEnd('获取数据');
-</script>
