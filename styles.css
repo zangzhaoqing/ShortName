@@ -1,1 +1,19 @@
-p{background-color:#ffffff;color:#1A237E;padding:15px}ul{background-color:#ffffff}li{color:#1A237E}
+div {
+  background-color: #f938ab;
+  padding: 50px;
+}
+@media (max-width: 400px) {
+  .divcolor {
+    background-color: green;
+  }
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  .divcolor {
+    background-color: red;
+  }
+}
+@media (min-width: 800px) {
+  .divcolor {
+    background-color: #f938ab;
+  }
+}
