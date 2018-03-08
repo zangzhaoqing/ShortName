@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*这是全局的样式*/
+$font-stack:Helvetica, sans-serif;
+$primary-color:#333;
+$border:1px solid #000;
+body{
+    font:100% $font-stack;
+    color:$primary-color;
+}
+nav{
+    border:$border;
+    background: yellow;
+    ul{
+        li{
+            display: inline-block;  
+            a{
+                color:#333;
+                padding: 10px;
+                text-decoration: none;
+                &:hover{
+                    color:#3fa435;
+                }
+                &:active{
+                    color:red;
+                } 
+            }         
+        }
+    }
+}

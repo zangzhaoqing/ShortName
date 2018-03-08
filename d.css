@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*这是全局的样式*/
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+nav {
+  border: 1px solid #000;
+  background: yellow;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #3fa435;
+}
+nav ul li a:active {
+  color: red;
+}
+
+/*# sourceMappingURL=d.css.map */
